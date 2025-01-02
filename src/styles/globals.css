@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "Pinkcrestelle-Bold";
+  src: url("/assets/fonts/Pinkcrestelle-Bold.otf") format("opentype");
+}
+
+body {
+  font-family: "Pinkcrestelle-Bold", sans-serif;
+}
+
+.symbol {
+  font-family: monospace;
+}
