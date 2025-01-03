@@ -1,0 +1,78 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 12rem;
+  //   background-color: rgba(0, 0, 0, 0.5);
+
+  @media (min-width: 1440px) {
+    padding: 1.6rem 10vw;
+  }
+
+  .logo {
+    font-family: "Pinkcrestelle-Bold", serif;
+
+    h1 {
+      color: #f2dfd0;
+
+      @media (min-width: 1440px) {
+        font-size: 1.8rem;
+      }
+    }
+
+    span {
+      color: #ff683d;
+    }
+  }
+
+  .navLinks {
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2.5rem;
+      font-size: 1.2rem;
+
+      li {
+        list-style: none;
+
+        a {
+          color: #f2dfd0;
+          letter-spacing: 0.05rem;
+        }
+      }
+    }
+  }
+
+  .menuIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.5rem;
+    font-size: 1.5rem;
+
+    div:first-child {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1.7rem;
+    }
+
+    .divider {
+      width: 2px;
+      height: 2.5rem;
+      background-color: #f2dfd0;
+      margin-top: -0.2rem;
+    }
+  }
+}
