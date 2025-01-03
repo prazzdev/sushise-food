@@ -2,9 +2,27 @@
   font-family: "Pinkcrestelle-Bold";
   src: url("/assets/fonts/Pinkcrestelle-Bold.otf") format("opentype");
 }
+@font-face {
+  font-family: "Larsseit-Regular";
+  src: url("/assets/fonts/Larsseit-Regular.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-  font-family: "Pinkcrestelle-Bold", sans-serif;
+  position: relative;
+  font-family: "Larsseit-Regular", sans-serif;
+  min-height: 100vh;
+  max-height: fit-content;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
 
 .symbol {

@@ -1,0 +1,22 @@
+.hero {
+  background-color: #075049;
+  position: relative;
+  min-height: 100vh;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+
+  .heroTexture {
+    position: absolute;
+    inset: 0;
+    min-height: 100vh;
+    max-height: 100vh;
+    min-width: 100vw;
+    max-width: 100vw;
+    opacity: 0.1;
+    transform: rotateY(180deg);
+  }
+}
