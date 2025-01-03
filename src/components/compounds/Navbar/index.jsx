@@ -39,8 +39,10 @@ const Navbar = () => {
           <a href="#">
             <GoPerson color="#f2dfd0" />
           </a>
-          <a href="#">
+          <a href="#" className={styles.cart}>
             <PiShoppingCartSimple color="#f2dfd0" />
+
+            <span className={styles.cartCount}>2</span>
           </a>
         </div>
         <div className={styles.divider} />
