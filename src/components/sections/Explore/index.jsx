@@ -2,7 +2,7 @@ import styles from "./Explore.module.scss";
 
 const Explore = () => {
   return (
-    <section id="explore">
+    <section className={styles.explore}>
       <h1>Explore</h1>
     </section>
   );
