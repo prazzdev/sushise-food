@@ -1,4 +1,241 @@
-.explore {
-  min-height: 500px;
+.ourSushi {
+  min-height: 1500px;
   background-color: #eee1d1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10rem;
+  position: relative;
+
+  @media screen and (min-width: 1440px) {
+    padding-top: 10rem;
+  }
+
+  .explore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    @media screen and (min-width: 1440px) {
+      gap: 3rem;
+    }
+
+    .tagline {
+      color: #074d48;
+      font-family: "Pinkcrestelle-Bold", serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @media screen and (min-width: 1440px) {
+        font-size: 3rem;
+        line-height: 1.5em;
+      }
+    }
+
+    .sushiTypeWrapper {
+      // background-color: skyblue;
+      min-width: 80%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+
+      @media screen and (min-width: 1920px) {
+        min-width: 80%;
+        gap: 2.2rem;
+      }
+
+      .sushiType {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+
+        @media screen and (min-width: 1920px) {
+          min-width: 275px;
+          min-width: 275px;
+          min-height: 275px;
+          max-height: 275px;
+          border-radius: 10px;
+        }
+
+        .image {
+          min-width: 200px;
+          max-width: 200px;
+          min-height: 200px;
+          max-height: 200px;
+
+          @media screen and (min-width: 1440px) {
+            min-width: 90px;
+            max-width: 90px;
+            min-height: 90px;
+            max-height: 90px;
+          }
+        }
+
+        .name {
+          font-family: "Pinkcrestelle-Bold", serif;
+
+          @media screen and (min-width: 1440px) {
+            font-size: 1.5rem;
+            margin-bottom: 0.3rem;
+          }
+        }
+
+        .count {
+          color: rgb(230, 223, 223);
+        }
+      }
+      .sushiType:first-child {
+        background-color: #ffcb44;
+        color: black;
+
+        .count {
+          color: rgb(99, 99, 99);
+        }
+      }
+      .sushiType:nth-child(2) {
+        background-color: #075049;
+      }
+      .sushiType:nth-child(3) {
+        background-color: #e56a40;
+      }
+      .sushiType:nth-child(4) {
+        background-color: #006cc6;
+      }
+      .sushiType:nth-child(5) {
+        background-color: #602c21;
+      }
+    }
+  }
+
+  .flavor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    @media screen and (min-width: 1440px) {
+      min-width: 80%;
+      max-width: 80%;
+      flex-direction: row;
+      gap: 3rem;
+    }
+
+    .left {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      gap: 1.8rem;
+
+      .tagline {
+        font-family: "Pinkcrestelle-Bold", serif;
+        color: #022c27;
+
+        @media screen and (min-width: 1920px) {
+          font-size: 3.4rem;
+          max-width: 90%;
+          line-height: 1.3em;
+        }
+      }
+
+      .desc {
+        color: rgb(34, 34, 34);
+
+        @media screen and (min-width: 1920px) {
+          font-size: 1.5rem;
+          max-width: 86%;
+          line-height: 1.5em;
+          margin-bottom: 0.5rem;
+        }
+      }
+
+      .exploreBtn {
+        max-width: fit-content;
+        color: white;
+        background-color: #075049;
+        border: none;
+        padding: 0.8rem 2rem;
+        border-radius: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
+        cursor: pointer;
+
+        @media screen and (min-width: 1920px) {
+          padding: 1.2rem 2.4rem;
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    .right {
+      display: flex;
+      flex: 1;
+
+      flex-direction: row;
+      background-color: salmon;
+
+      .first {
+        background-color: teal;
+
+        @media screen and (min-width: 1440px) {
+          flex-direction: row;
+        }
+
+        .users {
+          display: flex;
+          flex-direction: row;
+          gap: 0.8rem;
+          background-color: skyblue;
+
+          .usersAvatar {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            .avatarCircle {
+              border: 3px solid white;
+              font-weight: bold;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 50%;
+              color: white;
+              min-width: 50px;
+              max-width: 50px;
+              min-height: 50px;
+              max-height: 50px;
+
+              @media screen and (min-width: 1440px) {
+                min-width: 50px;
+                max-width: 50px;
+                min-height: 50px;
+                max-height: 50px;
+                background-color: white;
+                font-size: 1.5rem;
+                margin-left: -1.7rem;
+              }
+            }
+
+            .avatarCircle:first-child {
+              margin-left: 0;
+            }
+
+            .avatarCircle:last-child {
+              background-color: #eb7047;
+            }
+          }
+        }
+      }
+      .second {
+      }
+    }
+  }
 }
