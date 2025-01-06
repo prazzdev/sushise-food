@@ -2,7 +2,7 @@ import styles from "./Hero.module.scss";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { MdPlayArrow } from "react-icons/md";
 import { HiOutlinePlus } from "react-icons/hi2";
-import IlustImage from "../../fragments/IlustImage";
+import IlustImage from "../../elements/IlustImage";
 
 const avatars = [
   {
