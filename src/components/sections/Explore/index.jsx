@@ -83,6 +83,7 @@ const Explore = () => {
               name="Maguro Sushi"
               rate="5"
               price="8.00"
+              bgColor="green"
             />
             <div className={styles.users}>
               <div className={styles.usersAvatar}>
@@ -110,8 +111,18 @@ const Explore = () => {
               imgUrl="assets/images/sushi-plate-2.webp"
               alt="Maguro Sushi"
               name="Maguro Sushi"
-              rate="5"
+              rate="4.6"
               price="8.00"
+              bgColor="orange"
+              additionalComponent={
+                <>
+                  <img
+                    src="assets/images/leaf-1.webp"
+                    alt="Flavor Leaf image"
+                    className={styles.flavorLeaf}
+                  />
+                </>
+              }
             />
           </div>
         </div>

@@ -5,9 +5,6 @@
   display: flex;
   align-items: center;
 
-  @media screen and (min-width: 1440px) {
-  }
-
   .wrapper {
     position: relative;
     display: flex;
@@ -193,7 +190,7 @@
           min-width: clamp(760px, 100%, 760px);
           min-height: clamp(900px, 100%, 900px);
           background-position-x: -1rem;
-          //   background-color: salmon;
+          filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
         }
       }
     }
@@ -260,25 +257,25 @@
       right: 9rem;
       min-width: 250px;
       max-width: 250px;
-      //   transform: rotate(200deg);
-      //   background-color: salmon;
     }
   }
   .heroSushiIlust {
     position: absolute;
     left: 0;
+    z-index: 9;
+
     @media screen and (min-width: 1440px) {
       bottom: -17rem;
       left: -13rem;
       min-width: 500px;
       max-width: 500px;
-      //   transform: rotate(200deg);
-      //   background-color: salmon;
     }
   }
   .heroBottomCenterLeaf {
     position: absolute;
     left: 0;
+    z-index: 9;
+
     @media screen and (min-width: 1440px) {
       bottom: -5rem;
       left: 40%;
@@ -293,7 +290,8 @@
     right: 0;
     @media screen and (min-width: 1440px) {
       bottom: 9rem;
-      right: -2rem;
+      //   right: -2rem;
+      right: 0;
       min-width: 240px;
       max-width: 240px;
       //   transform: rotate(200deg);
