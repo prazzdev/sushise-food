@@ -1,3 +1,111 @@
 .flavorCard {
+  min-width: 300px;
+  max-width: 300px;
+  min-height: 300px;
+  max-height: 300px;
   background-color: aqua;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (min-width: 1920px) {
+    min-width: 320px;
+    max-width: 320px;
+    min-height: 340px;
+    max-height: 340px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+  }
+
+  figure,
+  div {
+    position: relative;
+    z-index: 2;
+  }
+
+  figure {
+    @media screen and (min-width: 1920px) {
+      position: absolute;
+      top: -10rem;
+      left: 2%;
+    }
+
+    .flavorImage {
+      min-width: 250px;
+      max-width: 250px;
+      filter: drop-shadow(10px 15px 2px rgba(0, 0, 0, 0.5));
+
+      @media screen and (min-width: 1920px) {
+        min-width: 280px;
+        max-width: 280px;
+      }
+    }
+  }
+
+  .desc {
+    font-family: "Larsseit-Regular", sans-serif;
+    color: white;
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.7rem;
+
+    @media screen and (min-width: 1920px) {
+      margin-top: 8rem;
+    }
+
+    .name {
+      font-family: "Pinkcrestelle-Bold", serif;
+
+      @media screen and (min-width: 1920px) {
+        font-size: 2rem;
+      }
+    }
+    .rate {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      @media screen and (min-width: 1920px) {
+        gap: 0.3rem;
+      }
+
+      .starWrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 1.5rem;
+        color: #fdcd48;
+      }
+      .rateText {
+        font-size: 1.4rem;
+      }
+    }
+    .price {
+      font-size: 2rem;
+      letter-spacing: 0.07rem;
+    }
+  }
+
+  .backgroundTexture {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    opacity: 0.2;
+  }
+}
+
+.green {
+  background-color: #064741;
+}
+.orange {
+  background-color: #e56a40;
 }

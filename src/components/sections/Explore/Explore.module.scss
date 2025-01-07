@@ -7,18 +7,15 @@
   gap: 10rem;
   position: relative;
 
-  @media screen and (min-width: 1440px) {
-    padding-top: 10rem;
-  }
-
   .explore {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
 
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: 1920px) {
       gap: 3rem;
+      padding-top: 10rem;
     }
 
     .tagline {
@@ -125,6 +122,7 @@
       max-width: 80%;
       flex-direction: row;
       gap: 3rem;
+      padding-top: 10rem;
     }
 
     .left {
@@ -178,22 +176,37 @@
     .right {
       display: flex;
       flex: 1;
+      min-height: 100%;
 
       flex-direction: row;
-      background-color: salmon;
+
+      @media screen and (min-width: 1920px) {
+        flex-direction: row;
+        align-items: end;
+        min-height: 500px;
+        max-height: 500px;
+        gap: 1.9rem;
+      }
 
       .first {
-        background-color: teal;
+        position: relative;
+        color: #075049;
 
-        @media screen and (min-width: 1440px) {
-          flex-direction: row;
+        @media screen and (min-width: 1920px) {
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+          max-height: fit-content;
+          margin-bottom: 4.5rem;
         }
 
         .users {
           display: flex;
           flex-direction: row;
-          gap: 0.8rem;
-          background-color: skyblue;
+          justify-content: center;
+          align-items: center;
+          gap: 1rem;
+          // background-color: skyblue;
 
           .usersAvatar {
             display: flex;
@@ -233,8 +246,38 @@
             }
           }
         }
+
+        h1 {
+          font-size: 2.1rem;
+          font-weight: bold;
+          letter-spacing: 0.04rem;
+        }
+        h5 {
+          font-weight: 500;
+          font-size: 1.1rem;
+        }
       }
       .second {
+        position: relative;
+
+        @media screen and (min-width: 1920px) {
+        }
+
+        .flavorLeaf {
+          position: absolute;
+          top: -18rem;
+          left: 0;
+          min-width: 100%;
+          max-width: 100%;
+          min-height: 100%;
+          max-height: 100%;
+          transform: rotate(180deg);
+
+          @media screen and (min-width: 1920px) {
+            top: -18rem;
+            left: 0;
+          }
+        }
       }
     }
   }
