@@ -1,3 +1,11 @@
+:root {
+  --tl-font: "Pinkcrestelle-Bold", serif;
+  --tl-color: #074d48;
+  --tl-size-xxl: 3rem;
+
+  --bento-borrad: 20px;
+}
+
 .ourSushi {
   min-height: 1500px;
   background-color: #eee1d1;
@@ -19,14 +27,14 @@
     }
 
     .tagline {
-      color: #074d48;
-      font-family: "Pinkcrestelle-Bold", serif;
+      color: var(--tl-color);
+      font-family: var(--tl-font);
       display: flex;
       flex-direction: column;
       align-items: center;
 
       @media screen and (min-width: 1440px) {
-        font-size: 3rem;
+        font-size: var(--tl-size-xxl);
         line-height: 1.5em;
       }
     }
@@ -113,7 +121,7 @@
   .flavor {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    // align-items: center;
     justify-content: center;
     gap: 2rem;
 
@@ -277,6 +285,232 @@
             top: -18rem;
             left: 0;
           }
+        }
+      }
+    }
+  }
+
+  .enjoy {
+    min-width: 80%;
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+
+    .tagline {
+      color: var(--tl-color);
+      font-family: var(--tl-font);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @media screen and (min-width: 1920px) {
+        font-size: var(--tl-size-xxl);
+        line-height: 1.5em;
+      }
+    }
+
+    .bentoWrapper {
+      position: relative;
+      gap: 2rem;
+
+      @media screen and (min-width: 1920px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        // align-items: center;
+        gap: 2.1rem;
+        // padding-top: 10rem;
+        min-height: 640px;
+        max-height: 640px;
+        min-width: 100%;
+        max-width: 100%;
+        // background-color: salmon;
+      }
+
+      img {
+        z-index: 2;
+        position: relative;
+      }
+
+      .discountBubble {
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-width: 280px;
+      }
+
+      .backgroundTexture {
+        position: absolute;
+        inset: 0;
+        min-width: 100%;
+        max-width: 100%;
+        min-height: 100%;
+        max-height: 100%;
+        z-index: 1;
+        opacity: 0.4;
+      }
+
+      .firstColumn {
+        position: relative;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        min-height: 100%;
+        max-height: 100%;
+        background-color: #075049;
+        border-radius: var(--bento-borrad);
+
+        @media screen and (min-width: 1920px) {
+          flex: 1;
+          min-height: 100%;
+          max-height: 100%;
+          padding-bottom: 1rem;
+        }
+
+        .sushiImage {
+          @media screen and (min-width: 1920px) {
+            min-width: 450px;
+            max-width: 450px;
+          }
+        }
+
+        .discountBubble {
+          top: -1rem;
+          left: 5.2rem;
+        }
+      }
+      .secondColumn {
+        gap: 2.1rem;
+        display: flex;
+        flex-direction: column;
+
+        @media screen and (min-width: 1920px) {
+          min-width: 60%;
+          max-width: 60%;
+        }
+
+        .secondColumnFirstRow {
+          flex: 1;
+          position: relative;
+          background-color: #ffcc45;
+          border-radius: var(--bento-borrad);
+          min-height: 300px;
+          max-height: 300px;
+          overflow-y: hidden;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+
+          .sushiImage {
+            min-width: 500px;
+            max-width: 500px;
+          }
+
+          .discountBubble {
+            top: 2rem;
+            left: 6rem;
+            max-width: 250px;
+          }
+
+          .discountText {
+            position: absolute;
+            top: 1rem;
+            right: 2.5rem;
+            display: flex;
+            flex-direction: column;
+
+            span {
+              color: #075049;
+              z-index: 2;
+              font-size: 2.5rem;
+              font-weight: 500;
+
+              .count {
+                font-weight: bold;
+              }
+            }
+          }
+
+          .addIcon {
+            left: 3vw;
+            bottom: 3vh;
+          }
+        }
+
+        .secondColumnSecondRow {
+          flex: 1;
+          display: flex;
+          flex-direction: row;
+          gap: 2.1rem;
+
+          .secondRowFirstColumn {
+            flex: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background-color: #e56a40;
+            border-radius: var(--bento-borrad);
+
+            .sushiImage {
+              min-width: 200px;
+              max-width: 200px;
+            }
+          }
+
+          .secondRowSecondColumn {
+            flex: 3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background-color: #ffa3a4;
+            border-radius: var(--bento-borrad);
+            overflow: hidden;
+            max-height: 300px;
+
+            .sushiImage {
+              min-width: 400px;
+              max-width: 400px;
+              transform: rotateY(180deg);
+            }
+          }
+        }
+      }
+
+      .addIcon {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 2;
+        border: 3px solid white;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        color: white;
+        background-color: #075049;
+        min-width: 50px;
+        max-width: 50px;
+        min-height: 50px;
+        max-height: 50px;
+        cursor: pointer;
+
+        @media screen and (min-width: 1440px) {
+          bottom: 2.5vh;
+          right: 1.7vw;
+          min-width: 55px;
+          max-width: 55px;
+          min-height: 55px;
+          max-height: 55px;
+          background-color: #075049;
+          font-size: 1.5rem;
+          margin-left: -1.7rem;
         }
       }
     }
