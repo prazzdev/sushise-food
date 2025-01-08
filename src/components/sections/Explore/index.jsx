@@ -127,6 +127,94 @@ const Explore = () => {
           </div>
         </div>
       </div>
+      <div className={styles.enjoy}>
+        <h1 className={styles.tagline}>
+          <span>Enjoy Fresh Sushi</span>
+          <span>for a vibrant, healthy lifestyle.</span>
+        </h1>
+        <div className={styles.bentoWrapper}>
+          <div className={styles.firstColumn}>
+            <img
+              src="assets/images/sushi-plate-3.webp"
+              alt="Sushi in plate"
+              className={styles.sushiImage}
+            />
+            <img
+              src="assets/images/discount-1.webp"
+              alt="discount bubble"
+              className={styles.discountBubble}
+            />
+            <img
+              src="assets/images/hero-texture.webp"
+              alt="bg texture"
+              className={styles.backgroundTexture}
+            />
+            <span className={styles.addIcon}>
+              <HiOutlinePlus />
+            </span>
+          </div>
+          <div className={styles.secondColumn}>
+            <div className={styles.secondColumnFirstRow}>
+              <img
+                src="assets/images/sushi-3.webp"
+                alt="Sushi with chopstick"
+                className={styles.sushiImage}
+              />
+              <img
+                src="assets/images/discount-2.webp"
+                alt="discount bubble"
+                className={styles.discountBubble}
+              />
+              <h1 className={styles.discountText}>
+                <span>up to</span>
+                <span>
+                  <span className={styles.count}>30</span>% save
+                </span>
+              </h1>
+              <span className={styles.addIcon}>
+                <HiOutlinePlus />
+              </span>
+              <img
+                src="assets/images/hero-texture.webp"
+                alt="bg texture"
+                className={styles.backgroundTexture}
+              />
+            </div>
+            <div className={styles.secondColumnSecondRow}>
+              <div className={styles.secondRowFirstColumn}>
+                <img
+                  src="assets/images/sushi-plate-4.webp"
+                  alt="Sushi with chopstick"
+                  className={styles.sushiImage}
+                />
+                <img
+                  src="assets/images/hero-texture.webp"
+                  alt="bg texture"
+                  className={styles.backgroundTexture}
+                />
+                <span className={styles.addIcon}>
+                  <HiOutlinePlus />
+                </span>
+              </div>
+              <div className={styles.secondRowSecondColumn}>
+                <img
+                  src="assets/images/sushi-plate-5.webp"
+                  alt="Sushi with chopstick"
+                  className={styles.sushiImage}
+                />
+                <img
+                  src="assets/images/hero-texture.webp"
+                  alt="bg texture"
+                  className={styles.backgroundTexture}
+                />
+                <span className={styles.addIcon}>
+                  <HiOutlinePlus />
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };
