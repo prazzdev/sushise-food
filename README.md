@@ -1,5 +1,5 @@
 <h1>Sushise</h1>
-<hr><p>Sushise is a responsive landing page designed to represent a fictional Japanese cuisine brand. The project focuses on elegant visuals and user-friendly navigation, embodying the aesthetic and cultural essence of Japan. It showcases the authenticity and quality of the dining experience offered by Sushise.</p><h2>General Information</h2>
+<p>Sushise is a responsive landing page designed to represent a fictional Japanese cuisine brand. The project focuses on elegant visuals and user-friendly navigation, embodying the aesthetic and cultural essence of Japan. It showcases the authenticity and quality of the dining experience offered by Sushise.</p><h2>General Information</h2>
 <hr><ul>
 <li><strong>General Info</strong><br>
 Sushise is a landing page project built with React and Vite, designed to showcase authentic Japanese cuisine. Featuring a modern and responsive design, it highlights traditional culinary techniques and premium ingredients, providing users with an engaging and visually appealing representation of Japanese dining culture.</li>
