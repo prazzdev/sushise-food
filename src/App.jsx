@@ -16,7 +16,7 @@ function App() {
         <WhyChooseUs />
         <Testimony />
         <Footer />
-        {alert("It’s only responsive at a screen size of 1600 x 900.")}
+        {alert("Still under development, and currently, it’s only responsive at a screen size of 1600 x 900.")}
       </div>
     </>
   );
